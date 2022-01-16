@@ -8,7 +8,7 @@ import { LoaderContext } from '../../context/loader'
 import { UIContect } from '../../context/ui'
 
 
-const SearchByRepository = () => {
+export default SearchByRepository = (props) => {
     const loaderC = useContext(LoaderContext);
     const uiC = useContext(UIContect);
     const [data, setData] = useState();
@@ -82,5 +82,3 @@ const SearchByRepository = () => {
         </React.Fragment >
     )
 }
-
-export default SearchByRepository;

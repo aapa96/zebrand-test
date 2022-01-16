@@ -6,7 +6,7 @@ import { getUsersByUsername } from '../../api'
 import { ProfileCard } from './components/profileCard'
 import { LoaderContext } from '../../context/loader'
 
-const SearchByUsername = () => {
+export default SearchByUsername = (props) => {
     const loaderC = useContext(LoaderContext);
     const [data, setData] = useState();
     const [repos, setRepos] = useState([]);
@@ -62,5 +62,3 @@ const SearchByUsername = () => {
         </React.Fragment>
     )
 }
-
-export default SearchByUsername;
