@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
 }
 
 a {
@@ -14,3 +14,96 @@ a {
 * {
   box-sizing: border-box;
 }
+#__next {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 25px;
+}
+.searchContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 25px 16px 15px;
+}
+
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchForm input {
+  width: 100%;
+  max-width: 850px;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.searchForm input:hover {
+  cursor: text;
+}
+
+.searchForm button {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 10px;
+  height: 40px;
+}
+
+/*Start Loader context */
+.loader {
+  width: 100%;
+  z-index: 99999;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bgLoader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.9;
+  z-index: 100;
+}
+.component {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.appContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.bg {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000ff;
+}
+
+.clearBoth {
+  margin: 20px 0px;
+  width: 100%;
+  height: 10px;
+}
+.notData {
+  color: red;
+}
+
+/*End Loader context */
