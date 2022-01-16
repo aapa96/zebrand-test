@@ -1,9 +1,9 @@
 import React from 'react'
-import style from '../../../styles/ProfileCard.module.scss'
+import style from '../styles/ProfileCard.module.scss'
 import { Avatar, Badge, Tooltip } from '@mui/material'
 import OpenInBrowser from '@mui/icons-material/OpenInBrowser';
 import CloseIcon from '@mui/icons-material/Close';
-export const ProfileCard = ({ data, repos, clearData }) => {
+const ProfileCard = ({ data, repos, clearData }) => {
 
     const openUrl = (url) => {
         window.open(url, '_blank')
@@ -65,3 +65,4 @@ export const ProfileCard = ({ data, repos, clearData }) => {
         </div>
     )
 };
+export default ProfileCard;

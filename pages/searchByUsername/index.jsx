@@ -3,10 +3,10 @@ import Head from 'next/head'
 import { useState } from 'react'
 import { Button } from '@mui/material'
 import { getUsersByUsername } from '../../api'
-import { ProfileCard } from './components/profileCard'
+import ProfileCard  from '../../components/profileCard'
 import { LoaderContext } from '../../context/loader'
 
-export default SearchByUsername = (props) => {
+const SearchByUsername = (props) => {
     const loaderC = useContext(LoaderContext);
     const [data, setData] = useState();
     const [repos, setRepos] = useState([]);
@@ -62,3 +62,5 @@ export default SearchByUsername = (props) => {
         </React.Fragment>
     )
 }
+
+export default SearchByUsername;

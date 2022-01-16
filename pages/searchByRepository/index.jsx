@@ -3,12 +3,12 @@ import Head from 'next/head'
 import { useState } from 'react'
 import { Button, Modal, Typography } from '@mui/material'
 import { getReposByUsername, getUsersByUsername } from '../../api'
-import { RepositoryCard } from './components/repoCard';
+import RepositoryCard from '../../components/repoCard';
 import { LoaderContext } from '../../context/loader'
 import { UIContect } from '../../context/ui'
 
 
-export default SearchByRepository = (props) => {
+const SearchByRepository = (props) => {
     const loaderC = useContext(LoaderContext);
     const uiC = useContext(UIContect);
     const [data, setData] = useState();
@@ -82,3 +82,5 @@ export default SearchByRepository = (props) => {
         </React.Fragment >
     )
 }
+
+export default SearchByRepository;

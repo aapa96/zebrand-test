@@ -1,6 +1,6 @@
 import React from 'react'
-import style from '../../../styles/RepositoryCard.module.scss'
-export const RepositoryCard = ({ data }) => {
+import style from '../styles/ProfileCard.module.scss'
+const RepositoryCard = ({ data }) => {
     if (!data) {
         return null
     }
@@ -16,3 +16,4 @@ export const RepositoryCard = ({ data }) => {
         </React.Fragment>
     )
 }
+export default RepositoryCard;
